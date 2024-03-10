@@ -10,7 +10,9 @@ sudo chmod +x install_clang.sh
 ## Commands Used
 ```bash 
 clang-format-13 -style=llvm -dump-config > formatter.clang-format
+ln -s formatter.clang-format .clang-format
 ```
 
 ## Extension for VSCode
 - xaver.clang-format
+- ~/${DIRECTORY}/clang-format-embedded/formatter.clang-format
