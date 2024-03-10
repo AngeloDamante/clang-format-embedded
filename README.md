@@ -16,3 +16,54 @@ ln -s formatter.clang-format .clang-format
 ## Extension for VSCode
 - xaver.clang-format
 - ~/${DIRECTORY}/clang-format-embedded/formatter.clang-format
+
+## Rules
+### Enum are not in a single line 
+```clang
+AllowShortEnumsOnASingleLine: false
+```
+
+### Intentation for Namespace
+```clang
+NamespaceIndentation: All
+```
+
+### Align consecutive assignments and declarations
+```clang
+AlignConsecutiveAssignments: true
+AlignConsecutiveDeclarations: true
+AlignConsecutiveMacros: true
+```
+
+### If in a single line
+```clang
+AllowShortBlocksOnASingleLine: true
+AllowShortIfStatementsOnASingleLine: WithoutElse
+```
+
+### Template before declaration
+`AlwaysBreakTemplateDeclarations: true`
+
+### Lambda body indentation
+`LambdaBodyIndentation: OuterScope`
+
+### Align consecutive function declarations
+`TODO`
+
+### Align nested conditions
+`TODO`
+
+### Align statements
+`TODO`
+
+### Align map keys
+`TODO`
+
+### Constructor Intializations
+`TODO`
+
+# REMARK
+- `AllowAllParametersOfDeclarationOnNextLine (bool)`
+- `AlignAfterOpenBracket`
+- `BreakConstructorInitializers`
+- `BreakInheritanceList`
